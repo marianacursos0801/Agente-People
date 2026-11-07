@@ -1,0 +1,150 @@
+:root {
+    --ink: #172b4d;
+    --muted: #64748b;
+    --accent: #3157d5;
+    --line: #e5eaf2;
+    --surface: #ffffff;
+    --canvas: #f5f7fb;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: var(--canvas);
+    color: var(--ink);
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stSidebar"] {
+    background: var(--surface);
+    border-right: 1px solid var(--line);
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    color: var(--muted);
+}
+
+.block-container {
+    max-width: 1180px;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+h1, h2, h3 {
+    color: var(--ink);
+    letter-spacing: -0.035em;
+}
+
+h1 {
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: 1.35rem !important;
+    font-weight: 650 !important;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.45rem;
+}
+
+.page-subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-top: -0.65rem;
+    margin-bottom: 1.6rem;
+}
+
+.brand-mark {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.status-line {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0;
+    color: var(--ink);
+    font-size: 0.9rem;
+}
+
+.status-dot {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    display: inline-block;
+    flex: 0 0 auto;
+}
+
+.status-dot.ok { background: #16a36a; }
+.status-dot.off { background: #d29a32; }
+
+.integration-title {
+    font-weight: 650;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+}
+
+.integration-copy {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: var(--surface);
+    border-color: var(--line);
+    border-radius: 12px;
+}
+
+.stTextArea textarea {
+    background: var(--surface);
+    border-color: #d8dfeb;
+    border-radius: 9px;
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+.stTextArea textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+}
+
+.stButton > button {
+    min-height: 2.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.stButton > button[kind="primaryFormSubmit"] {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #ffffff !important;
+}
+
+[data-testid="stFormSubmitButton"] button {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #ffffff !important;
+}
+
+[data-testid="stForm"] {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+hr {
+    border-color: var(--line);
+}
